@@ -1,0 +1,61 @@
+{
+  "name": "@mayhem/llm-sdk",
+  "version": "0.1.0",
+  "description": "AI trading SDK for Mayhem protocol - Connect LLMs to autonomous token trading",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only examples/basic-trader.ts",
+    "example:trader": "ts-node examples/basic-trader.ts",
+    "example:buyback": "ts-node examples/buyback-burn-bot.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "solana",
+    "trading",
+    "ai",
+    "llm",
+    "crypto",
+    "defi",
+    "autonomous",
+    "mayhem",
+    "eliza",
+    "openrouter"
+  ],
+  "author": "Mayhem Protocol",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.9",
+    "@coral-xyz/anchor": "^0.29.0",
+    "dotenv": "^16.3.1",
+    "bs58": "^5.0.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayhem-protocol/llm-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mayhem-protocol/llm-sdk/issues"
+  },
+  "homepage": "https://mayhem.io"
+}

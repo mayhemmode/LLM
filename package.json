@@ -1,6 +1,6 @@
 {
   "name": "@mayhem/llm-sdk",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "AI trading SDK for Mayhem protocol - Connect LLMs to autonomous token trading",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
